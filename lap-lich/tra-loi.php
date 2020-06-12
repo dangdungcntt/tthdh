@@ -9,11 +9,11 @@
     </h2>
     <h3>
 
-        <span class="label label-info">
-            <?php if ($isRR == 1) {
-                echo "Thời gian lượng tử: $tgLuongTu";
-            } ?>
-        </span>
+        <?php if ($isRR == 1) : ?>
+            <span class="label label-info">
+                <?= "Thời gian lượng tử: $tgLuongTu" ?>
+            </span>
+        <?php endif; ?>
 
         <span class="label label-danger">
             <?php echo "Chờ trung bình: ".number_format($tongTgCho / $soTienTrinh, 2); ?>
